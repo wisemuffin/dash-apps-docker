@@ -11,11 +11,11 @@ services:
     command: gunicorn -w 1 -b :8000 app:server
 
 
-  nginx:
-    container_name: san_fran_nginx
-    restart: always
-    build: ./nginx
-    ports:
-      - "80:80"
-    depends_on:
-      - dash_app
+  # nginx:
+  #   container_name: san_fran_nginx
+  #   restart: always
+  #   build: ./nginx
+  #   ports:
+  #     - "80:80"
+  #   depends_on:
+  #     - dash_app

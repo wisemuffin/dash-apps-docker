@@ -9,13 +9,5 @@ services:
     ports:
       - "8001:8000"
     command: gunicorn -w 1 -b :8000 app:server
+ 
 
-
-  nginx:
-    container_name: nhs_nginx
-    restart: always
-    build: ./nginx
-    ports:
-      - "81:80"
-    depends_on:
-      - dash_app
