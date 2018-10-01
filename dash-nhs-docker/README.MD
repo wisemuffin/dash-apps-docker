@@ -1,0 +1,64 @@
+# CS50project - NHS Visualisation using Plotly and Dash
+David Griffiths's final project for the Harvard CS50 course.
+
+>
+> The reporting from the UK's [NHS digital](https://digital.nhs.uk/) team is in depth but these publications are not **interactive** (mostly excel based). My aim is build an application that allows the UK public to explore these data sets dynamically by utilising pythons visualisation libraries.
+>
+
+View the [app on digital ocean](wisemuffin.com/nhs)
+
+
+## About
+
+[![YouTube - About the application](https://img.youtube.com/vi/ADGlSa2_9aI/0.jpg)](https://www.youtube.com/watch?v=ADGlSa2_9aI)
+
+#### Implementation
+
+[Dash](https://plot.ly/dash) and [Plotly](https://plot.ly/) were the two key technologies i used to build this application. Other libraries or tools used:
+
+* digitalocean & docker - to deploy the site
+* font awesome - for social media icons on the footer
+* bootstrap - for custom css to help render layout on different devices
+* Jupyter Notebooks - to do the initall exploration
+* pandas - a python library that allows you to transform database
+
+
+#### 111 Program Tab
+
+3d plot of NHS areas across time and performance of calls answered within 60 seconds.
+
+
+![Demo2](https://github.com/wisemuffin/CS50project/blob/master/documenation/111%20program%203d%20chart.gif)
+
+
+#### Cancer Survival Tab
+
+hover over the bar cancer site to filter the below time series and donought charts.
+
+![Demo](https://github.com/wisemuffin/CS50project/blob/master/documenation/cancer%20dashboard.gif)
+
+#### Outpatient Activity 2016-17 Tab
+
+![Demo](https://github.com/wisemuffin/CS50project/blob/master/documenation/OutPat%20bar%20chart.gif)
+
+## Jupyter Notebooks
+
+I used [Jupyter Notebooks](http://jupyter.org/) and the [Pandas](https://pandas.pydata.org/) library to initially explore data sets.  
+
+[Jupyter Notebooks](http://jupyter.org/) only render static html images on github. To view the jupyter notebooks i recommend pasting the link of the github notebook into [nbviewer](https://nbviewer.jupyter.org/) e.g. https://nbviewer.jupyter.org/github/wisemuffin/CS50project/blob/master/jupyter%20notebooks/NHS_111_Programme.ipynb
+
+![Demo](https://github.com/wisemuffin/CS50project/blob/master/documenation/nbviewer%20jupyter.gif)
+
+However if you want to fully replicate this analysis please see the last section on how to replicate this analysis on your own machine.  
+
+
+
+## Future Work
+
+```
+* set up [environment.yml](https://github.com/czbiohub/singlecell-dash/blob/master/README.md) so others can use
+* get more ideas from the [plotly community](https://community.plot.ly/t/show-and-tell-community-thread-tada/7554)
+* could add table from https://github.com/jackdbd/dash-earthquakes
+* could add some graphs from mapbox
+* think about layout for different devices
+```
