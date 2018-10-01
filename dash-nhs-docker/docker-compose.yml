@@ -9,5 +9,3 @@ services:
     ports:
       - "8001:8000"
     command: gunicorn -w 1 -b :8000 app:server
- 
-
