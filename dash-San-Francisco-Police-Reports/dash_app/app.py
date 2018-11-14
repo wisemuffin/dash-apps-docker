@@ -12,8 +12,6 @@ import dash_html_components as html
 # from datetime import datetime
 # import pandas_datareader.data as web
 
-from footer import create_footer
-
 # test imports
 # import json
 
@@ -90,7 +88,7 @@ app.layout = html.Div(children=[
     ], style={'text-align': 'center'}),
 
     html.Div(children=[], style={'border': 'none', 'height': 50}),
-    create_footer()
+
 ])
 
 
